@@ -97,44 +97,166 @@
 
     <script>
       (function () {
-        emailjs.init("wPUkcmXaRt-OWk1t7"); // Your public key (User ID)
+        emailjs.init("vbIFtwJDcQpSn54lR");
       })();
 
-      // function sendEmail() {
-      //     const templateParams = {
-      //       from_name: document.getElementById("from_name").value,
+      //   function sendEmail() {
+      //     const fromName = document.getElementById("from_name").value.trim();
+      //     const message = document.getElementById("message").value.trim();
+      //     const jila = document.getElementById("jila").value.trim();
+      //     const gaun = document.getElementById("gaun").value.trim();
+      //     const phone = document.getElementById("phone").value.trim();
+      //     const modelNo = document.getElementById("model_no").value.trim();
 
-      //         message: document.getElementById("message").value,
-      //         jila: document.getElementById("jila").value,
-      //         gaun: document.getElementById("gaun").value,
-      //         phone: document.getElementById("phone").value,
-      //         model_no: document.getElementById("model_no").value
+      //     const errors = [];
+
+      //     if (!fromName) errors.push("Name is required.");
+      //     if (!message) errors.push("Message is required.");
+      //     if (!jila) errors.push("District (जिला) is required.");
+      //     if (!gaun) errors.push("Village (गांव) is required.");
+      //     if (!phone) errors.push("Phone number is required.");
+      //     if (!modelNo) errors.push("Model number is required.");
+
+      //     const phonePattern = /^\d{10}$/;
+      //     if (phone && !phonePattern.test(phone))
+      //       errors.push("Phone number must be 10 digits.");
+
+      //     if (fromName.length > 50)
+      //       errors.push("Name cannot exceed 50 characters.");
+      //     if (message.length > 300)
+      //       errors.push("Message cannot exceed 300 characters.");
+      //     if (jila.length > 30)
+      //       errors.push("District (जिला) cannot exceed 30 characters.");
+      //     if (gaun.length > 30)
+      //       errors.push("Village (गांव) cannot exceed 30 characters.");
+      //     if (modelNo.length > 20)
+      //       errors.push("Model number cannot exceed 20 characters.");
+
+      //     const errorMessageDiv = document.getElementById("error-message");
+
+      //     if (errors.length > 0) {
+      //       errorMessageDiv.innerHTML = errors.join("<br>");
+      //       return;
+      //     } else {
+      //       errorMessageDiv.innerHTML = "";
+      //     }
+      //     const now = new Date();
+      //     const date = now.toLocaleDateString(); // Format: MM/DD/YYYY
+      //     const day = now.toLocaleString("en-us", { weekday: "long" }); // Format: Day of the week
+      //     const time = now.toLocaleTimeString(); // Format: HH:MM:SS AM/PM
+      //     const templateParams = {
+      //       from_name: fromName,
+      //       message: message,
+      //       jila: jila,
+      //       gaun: gaun,
+      //       phone: phone,
+      //       model_no: modelNo,
+      //       date: date,
+      //       day: day,
+      //       time: time,
       //     };
 
-      //     emailjs.send("service_o9wojrk", "template_n2lpgpl", templateParams)
-      //         .then((response) => {
-      //             console.log("Email successfully sent!", response,response.status, response.text);
-      //             alert("Email sent successfully!");
-      //         })
-      //         .catch((error) => {
-      //             console.error("Failed to send email. Error:", error);
-      //             alert("Failed to send email. Please try again.");
-      //         });
-      // }
+      //     emailjs
+      //       .send("service_o9wojrk", "template_n2lpgpl", templateParams)
+      //       .then((response) => {
+      //         console.log("Email successfully sent!", response);
+      //         // window.location.href = "/thankyou.html";
+      //         // document.getElementById("contact-form").reset();
+      //         document.getElementById("contact-form").reset(); // Reset the form
+      //         $("#thankYouModal").modal("show"); // Show the modal
+      //       })
+      //       .catch((error) => {
+      //         console.error("Failed to send email. Error:", error);
+      //         alert("Failed to send email. Please try again.");
+      //       });
+      //   }
+      //   function sendEmail() {
+      //     const fromName = document.getElementById("from_name").value.trim();
+      //     const message = document.getElementById("message").value.trim();
+      //     const jila = document.getElementById("jila").value.trim();
+      //     const gaun = document.getElementById("gaun").value.trim();
+      //     const phone = document.getElementById("phone").value.trim();
+      //     const modelNo = document.getElementById("model_no").value.trim();
 
+      //     const errors = [];
+
+      //     if (!fromName) errors.push("Name is required.");
+      //     if (!message) errors.push("Message is required.");
+      //     if (!jila) errors.push("District (जिला) is required.");
+      //     if (!gaun) errors.push("Village (गांव) is required.");
+      //     if (!phone) errors.push("Phone number is required.");
+      //     if (!modelNo) errors.push("Model number is required.");
+
+      //     const phonePattern = /^\d{10}$/;
+      //     if (phone && !phonePattern.test(phone))
+      //       errors.push("Phone number must be 10 digits.");
+
+      //     if (fromName.length > 50)
+      //       errors.push("Name cannot exceed 50 characters.");
+      //     if (message.length > 300)
+      //       errors.push("Message cannot exceed 300 characters.");
+      //     if (jila.length > 30)
+      //       errors.push("District (जिला) cannot exceed 30 characters.");
+      //     if (gaun.length > 30)
+      //       errors.push("Village (गांव) cannot exceed 30 characters.");
+      //     if (modelNo.length > 20)
+      //       errors.push("Model number cannot exceed 20 characters.");
+
+      //     const errorMessageDiv = document.getElementById("error-message");
+
+      //     if (errors.length > 0) {
+      //       errorMessageDiv.innerHTML = errors.join("<br>");
+      //       return;
+      //     } else {
+      //       errorMessageDiv.innerHTML = "";
+      //     }
+
+      //     // Get current date, day, and time
+      //     const now = new Date();
+      //     const date = now.toLocaleDateString(); // e.g., MM/DD/YYYY
+      //     const day = now.toLocaleString("en-us", { weekday: "long" }); // e.g., "Monday"
+      //     const time = now.toLocaleTimeString(); // e.g., HH:MM:SS AM/PM
+
+      //     // Set hidden fields
+      //     document.getElementById("submission_date").value = date;
+      //     document.getElementById("submission_day").value = day;
+      //     document.getElementById("submission_time").value = time;
+      //     document.getElementById("to_name").value = to_name;
+
+      //     const templateParams = {
+      //       from_name: fromName,
+      //       message: message,
+      //       jila: jila,
+      //       gaun: gaun,
+      //       phone: phone,
+      //       model_no: modelNo,
+      //       date: date,
+      //       day: day,
+      //       time: time,
+      //     };
+
+      //     emailjs
+      //       .send("service_efubzlf", "template_oeva3cf", templateParams)
+      //       .then((response) => {
+      //         console.log("Email successfully sent!", response);
+      //         document.getElementById("contact-form").reset(); // Reset the form
+      //         $("#thankYouModal").modal("show"); // Show the modal
+      //       })
+      //       .catch((error) => {
+      //         console.error("Failed to send email. Error:", error);
+      //         alert("Failed to send email. Please try again.");
+      //       });
+      //   }
       function sendEmail() {
-        // Getting values and trimming leading/trailing spaces
         const fromName = document.getElementById("from_name").value.trim();
         const message = document.getElementById("message").value.trim();
         const jila = document.getElementById("jila").value.trim();
         const gaun = document.getElementById("gaun").value.trim();
         const phone = document.getElementById("phone").value.trim();
         const modelNo = document.getElementById("model_no").value.trim();
-
-        // Validation checks
+        const to_name = document.getElementById("to_name").value.trim();
         const errors = [];
 
-        // Check for empty mandatory fields
         if (!fromName) errors.push("Name is required.");
         if (!message) errors.push("Message is required.");
         if (!jila) errors.push("District (जिला) is required.");
@@ -142,12 +264,10 @@
         if (!phone) errors.push("Phone number is required.");
         if (!modelNo) errors.push("Model number is required.");
 
-        // Phone number validation (10 digits only)
         const phonePattern = /^\d{10}$/;
         if (phone && !phonePattern.test(phone))
           errors.push("Phone number must be 10 digits.");
 
-        // Character limit checks
         if (fromName.length > 50)
           errors.push("Name cannot exceed 50 characters.");
         if (message.length > 300)
@@ -159,20 +279,25 @@
         if (modelNo.length > 20)
           errors.push("Model number cannot exceed 20 characters.");
 
-        // Get error message div
         const errorMessageDiv = document.getElementById("error-message");
-
-        // If there are errors, display them and stop the function
         if (errors.length > 0) {
-          // Display errors on screen
           errorMessageDiv.innerHTML = errors.join("<br>");
           return;
         } else {
-          // Clear previous error messages if no errors
           errorMessageDiv.innerHTML = "";
         }
 
-        // If all validations pass, prepare template parameters
+        // Get current date, day, and time
+        const now = new Date();
+        const date = now.toLocaleDateString().replace(/\//g, "-"); 
+        const day = now.toLocaleString("en-us", { weekday: "long" }); 
+        const time = now.toLocaleTimeString(); 
+
+        // Set hidden fields
+        document.getElementById("submission_date").value = date;
+        document.getElementById("submission_day").value = day;
+        document.getElementById("submission_time").value = time;
+
         const templateParams = {
           from_name: fromName,
           message: message,
@@ -180,16 +305,19 @@
           gaun: gaun,
           phone: phone,
           model_no: modelNo,
+          date: date,
+          day: day,
+          time: time,
+          to_name: to_name,
         };
 
-        // Send email using emailjs
+
         emailjs
-          .send("service_o9wojrk", "template_n2lpgpl", templateParams)
+          .send("service_efubzlf", "template_oeva3cf", templateParams)
           .then((response) => {
             console.log("Email successfully sent!", response);
-            alert("Email sent successfully!");
-            // Optionally clear form after successful submission
-            document.getElementById("contact-form").reset();
+            document.getElementById("contact-form").reset(); // Reset the form
+            $("#thankYouModal").modal("show"); // Show the modal
           })
           .catch((error) => {
             console.error("Failed to send email. Error:", error);
@@ -246,7 +374,7 @@
                   <ul id="mainmenu">
                     <li><a class="menu-item" href="index.html">होम पेज</a></li>
                     <li>
-                      <a class="menu-item" href="products.html">हमारे उत्पाद</a>
+                      <a class="menu-item" href="products.html">मेरा स्वराज</a>
                       <ul class="mega">
                         <li>
                           <div class="container">
@@ -425,7 +553,7 @@
                   संदेश भरें, और हम जल्द ही आपसे संपर्क करेंगे।
                 </p>
 
-                <form id="contact-form" onsubmit="sendEmail(); return false;">
+                <!-- <form id="contact-form" onsubmit="sendEmail(); return false;">
                   <div
                     id="error-message"
                     style="color: red; font-size: 14px; margin-top: 10px"
@@ -442,6 +570,38 @@
                     <input type="text" id="model_no" placeholder="मॉडल नंबर" />
                   </div>
                   <textarea id="message" placeholder="आपका संदेश"></textarea>
+                  <button type="submit">संदेश भेजें</button>
+                </form> -->
+                <form id="contact-form" onsubmit="sendEmail(); return false;">
+                  <div
+                    id="error-message"
+                    style="color: red; font-size: 14px; margin-top: 10px"
+                  ></div>
+
+                  <div class="form-row">
+                    <input type="text" id="from_name" placeholder="आपका नाम" />
+                  </div>
+                  <div class="form-row">
+                    <input type="text" id="jila" placeholder="जिला" />
+                    <input type="text" id="gaun" placeholder="गांव" />
+                  </div>
+                  <div class="form-row">
+                    <input type="text" id="phone" placeholder="फोन" />
+                    <input type="text" id="model_no" placeholder="मॉडल नंबर" />
+                  </div>
+                  <textarea id="message" placeholder="आपका संदेश"></textarea>
+
+                  <!-- Hidden fields for date, day, and time -->
+                  <input type="hidden" id="submission_date" name="date" />
+                  <input type="hidden" id="submission_day" name="day" />
+                  <input type="hidden" id="submission_time" name="time" />
+                  <input
+                    type="hidden"
+                    id="to_name"
+                    name="to_name"
+                    value="Savitri Automobiles"
+                  />
+
                   <button type="submit">संदेश भेजें</button>
                 </form>
 
@@ -536,7 +696,7 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <div class="widget">
-                    <h5>हमारे उत्पाद</h5>
+                    <h5>मेरा स्वराज</h5>
                     <ul>
                       <li>
                         <a href="/swaraj-843-xm-tractor.html">स्वराज 843 XM</a>
@@ -635,7 +795,7 @@
                 </ul>
               </div>
               <div class="widget">
-                <h5>हमारे उत्पाद</h5>
+                <h5>मेरा स्वराज</h5>
                 <ul>
                   <li>
                     <a href="/swaraj-843-xm-tractor.html">स्वराज 843 XM</a>
@@ -699,6 +859,54 @@
         </div>
       </footer>
       <!-- mobile Footer close -->
+
+      <!-- Thank You Modal -->
+      <div
+        class="modal fade"
+        id="thankYouModal"
+        tabindex="-1"
+        aria-labelledby="thankYouModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <div class="p-4 border border-success rounded">
+                <h4 class="text-success fw-bold">
+                  सवित्री ऑटोमोबाइल्स में आपका स्वागत है!
+                </h4>
+                <p class="mt-3">
+                  आपके द्वारा हमारी वेबसाइट पर एनक्वायरी फॉर्म भरने के लिए हम
+                  आपका आभार व्यक्त करते हैं।<br /><br />
+                  हमारी सेल्स टीम आपकी आवश्यकताओं को समझने के लिए जल्द ही आपसे
+                  संपर्क करेगी और आपको ट्रैक्टर के बारे में विस्तृत जानकारी
+                  प्रदान करेगी।<br /><br />
+                  धन्यवाद!<br />
+                  <strong>सवित्री ऑटोमोबाइल्स टीम</strong>
+                </p>
+                <!-- <div class="d-flex justify-content-center mt-4">
+                  <a href="/index.html" class="btn btn-danger mx-2">होम पेज</a>
+                  <a href="/products.html" class="btn btn-dark mx-2"
+                    >अन्य मॉडल्स देखें</a
+                  >
+                </div> -->
+                <div
+                  class="d-flex align-items-center justify-content-center mt-4"
+                >
+                  <a href="index.html">
+                    <button class="btn btn-danger mx-2">होम पेज</button>
+                  </a>
+                  <a href="products.html">
+                    <button class="btn btn-success mx-2">
+                      अन्य मॉडल्स देखें
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Javascript Files

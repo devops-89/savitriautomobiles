@@ -37,6 +37,56 @@
       #mainmenu > li::before {
         display: none;
       }
+      .wrapper {
+        text-align: center;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 2px solid #388e3c;
+        border-radius: 8px;
+        max-width: 500px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .wrapper h1 {
+        color: #388e3c;
+        font-size: 1.8em;
+        margin-bottom: 1rem;
+      }
+      .wrapper p {
+        font-size: 1em;
+        color: #333333;
+        line-height: 1.6;
+      }
+      .buttons {
+        margin-top: 1.5rem;
+      }
+      .button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+      .button-home {
+        background-color: #d32f2f;
+      }
+      .button-home:hover {
+        background-color: #b71c1c;
+      }
+      .button-models {
+        background-color: #455a64;
+      }
+      .button-models:hover {
+        background-color: #37474f;
+      }
+      .bg-grey{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
   </head>
 
@@ -87,7 +137,7 @@
                   <ul id="mainmenu">
                     <li><a class="menu-item" href="index.html">होम पेज</a></li>
                     <li>
-                      <a class="menu-item" href="products.html">हमारे उत्पाद</a>
+                      <a class="menu-item" href="products.html">मेरा स्वराज</a>
                       <ul class="mega">
                         <li>
                           <div class="container">
@@ -238,27 +288,29 @@
       <div class="no-bottom no-top" id="content">
         <div id="top"></div>
         <section class="pt10 pb10 mt80 bg-grey">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <h3 class="mb-0">
-                  संपर्क करें<i class="icofont-dotted-right id-color ms-2"></i>
-                </h3>
-              </div>
+          <div class="wrapper m-auto">
+            <h1>सवित्री ऑटोमोबाइल्स में आपका स्वागत है!</h1>
+            <p>
+              आपके द्वारा हमारी वेबसाइट पर एनक्वायरी फॉर्म भरने के लिए हम आपका
+              आभार व्यक्त करते हैं।
+            </p>
+            <p>
+              हमारी सेल्स टीम आपकी आवश्यकताओं को समझने के लिए जल्द ही आपसे
+              संपर्क करेगी और आपको ट्रैक्टर के बारे में विस्तृत जानकारी प्रदान
+              करेगी।
+            </p>
+            <p>धन्यवाद!<br />सवित्री ऑटोमोबाइल्स टीम</p>
 
-              <div class="col-lg-6 text-lg-end">
-                <ul class="crumb">
-                  <li><a href="index.html">मुख्य पृष्ठ</a></li>
-                  <li class="active">संपर्क करें</li>
-                </ul>
-              </div>
+            <div class="buttons">
+              <a href="/index.html" class="button button-home">होम पेज</a>
+              <a href="/products.html" class="button button-models"
+                >अन्य मॉडल्स देखें</a
+              >
             </div>
           </div>
         </section>
 
-        <section>
-          <h1>Thank you</h1>
-        </section>
+       
       </div>
       <!-- content close -->
       <!-- footer begin -->
@@ -307,7 +359,7 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <div class="widget">
-                    <h5>हमारे उत्पाद</h5>
+                    <h5>मेरा स्वराज</h5>
                     <ul>
                       <li>
                         <a href="/swaraj-843-xm-tractor.html">स्वराज 843 XM</a>
@@ -406,7 +458,7 @@
                 </ul>
               </div>
               <div class="widget">
-                <h5>हमारे उत्पाद</h5>
+                <h5>मेरा स्वराज</h5>
                 <ul>
                   <li>
                     <a href="/swaraj-843-xm-tractor.html">स्वराज 843 XM</a>
