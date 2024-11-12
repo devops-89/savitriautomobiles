@@ -337,6 +337,28 @@
           });
       }
     </script>
+    <script>
+      // Function to toggle the popup
+      function togglePopup() {
+        const popup = document.getElementById("whatsappPopup");
+        popup.style.display =
+          popup.style.display === "none" || popup.style.display === ""
+            ? "block"
+            : "none";
+      }
+
+      // Function to send the message
+      function sendMessage() {
+        const message = document.getElementById("message").value;
+        const phoneNumber = "9149048749"; // Replace with your WhatsApp number in international format
+
+        // WhatsApp API link with the message
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(whatsappUrl, "_blank");
+      }
+    </script>
   </head>
   <!-- Google tag (gtag.js) -->
   <script
@@ -685,6 +707,39 @@
         </section>
       </div>
       <!-- content close -->
+      <div class="whatsapp-button" onclick="togglePopup()">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+        />
+      </div>
+
+      <!-- WhatsApp Popup -->
+      <div class="whatsapp-popup" id="whatsappPopup">
+        <div class="whatsapp-popup-header">
+          <div style="display: flex; align-items: center">
+            <img src="images/logo/logo.jpg" alt="Logo" />
+            <div>
+              <h4>SAVITRI AUTOMOBILES</h4>
+              <span>Typically replies within 1 hour</span>
+            </div>
+          </div>
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+        </div>
+        <div class="whatsapp-message">
+          नमस्कार! सावित्री ऑटोमोबाइल्स में आपका स्वागत है। हम 1-2 घंटे के भीतर
+          आपसे संपर्क करेंगे। इस बीच, हमारे द्वारा प्रदान की जाने वाली सेवाओं की
+          जाँच करें।
+        </div>
+        <div class="whatsapp-input">
+          <textarea
+            id="message"
+            rows="1"
+            placeholder="Type a message..."
+          ></textarea>
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
       <!-- footer begin -->
       <footer class="section-dark desktop_footer">
         <div class="container">
