@@ -113,153 +113,6 @@
         emailjs.init("vbIFtwJDcQpSn54lR");
       })();
 
-      //   function sendEmail() {
-      //     const fromName = document.getElementById("from_name").value.trim();
-      //     const message = document.getElementById("message").value.trim();
-      //     const jila = document.getElementById("jila").value.trim();
-      //     const gaun = document.getElementById("gaun").value.trim();
-      //     const phone = document.getElementById("phone").value.trim();
-      //     const modelNo = document.getElementById("model_no").value.trim();
-
-      //     const errors = [];
-
-      //     if (!fromName) errors.push("Name is required.");
-      //     if (!message) errors.push("Message is required.");
-      //     if (!jila) errors.push("District (जिला) is required.");
-      //     if (!gaun) errors.push("Village (गांव) is required.");
-      //     if (!phone) errors.push("Phone number is required.");
-      //     if (!modelNo) errors.push("Model number is required.");
-
-      //     const phonePattern = /^\d{10}$/;
-      //     if (phone && !phonePattern.test(phone))
-      //       errors.push("Phone number must be 10 digits.");
-
-      //     if (fromName.length > 50)
-      //       errors.push("Name cannot exceed 50 characters.");
-      //     if (message.length > 300)
-      //       errors.push("Message cannot exceed 300 characters.");
-      //     if (jila.length > 30)
-      //       errors.push("District (जिला) cannot exceed 30 characters.");
-      //     if (gaun.length > 30)
-      //       errors.push("Village (गांव) cannot exceed 30 characters.");
-      //     if (modelNo.length > 20)
-      //       errors.push("Model number cannot exceed 20 characters.");
-
-      //     const errorMessageDiv = document.getElementById("error-message");
-
-      //     if (errors.length > 0) {
-      //       errorMessageDiv.innerHTML = errors.join("<br>");
-      //       return;
-      //     } else {
-      //       errorMessageDiv.innerHTML = "";
-      //     }
-      //     const now = new Date();
-      //     const date = now.toLocaleDateString(); // Format: MM/DD/YYYY
-      //     const day = now.toLocaleString("en-us", { weekday: "long" }); // Format: Day of the week
-      //     const time = now.toLocaleTimeString(); // Format: HH:MM:SS AM/PM
-      //     const templateParams = {
-      //       from_name: fromName,
-      //       message: message,
-      //       jila: jila,
-      //       gaun: gaun,
-      //       phone: phone,
-      //       model_no: modelNo,
-      //       date: date,
-      //       day: day,
-      //       time: time,
-      //     };
-
-      //     emailjs
-      //       .send("service_o9wojrk", "template_n2lpgpl", templateParams)
-      //       .then((response) => {
-      //         console.log("Email successfully sent!", response);
-      //         // window.location.href = "/thankyou.html";
-      //         // document.getElementById("contact-form").reset();
-      //         document.getElementById("contact-form").reset(); // Reset the form
-      //         $("#thankYouModal").modal("show"); // Show the modal
-      //       })
-      //       .catch((error) => {
-      //         console.error("Failed to send email. Error:", error);
-      //         alert("Failed to send email. Please try again.");
-      //       });
-      //   }
-      //   function sendEmail() {
-      //     const fromName = document.getElementById("from_name").value.trim();
-      //     const message = document.getElementById("message").value.trim();
-      //     const jila = document.getElementById("jila").value.trim();
-      //     const gaun = document.getElementById("gaun").value.trim();
-      //     const phone = document.getElementById("phone").value.trim();
-      //     const modelNo = document.getElementById("model_no").value.trim();
-
-      //     const errors = [];
-
-      //     if (!fromName) errors.push("Name is required.");
-      //     if (!message) errors.push("Message is required.");
-      //     if (!jila) errors.push("District (जिला) is required.");
-      //     if (!gaun) errors.push("Village (गांव) is required.");
-      //     if (!phone) errors.push("Phone number is required.");
-      //     if (!modelNo) errors.push("Model number is required.");
-
-      //     const phonePattern = /^\d{10}$/;
-      //     if (phone && !phonePattern.test(phone))
-      //       errors.push("Phone number must be 10 digits.");
-
-      //     if (fromName.length > 50)
-      //       errors.push("Name cannot exceed 50 characters.");
-      //     if (message.length > 300)
-      //       errors.push("Message cannot exceed 300 characters.");
-      //     if (jila.length > 30)
-      //       errors.push("District (जिला) cannot exceed 30 characters.");
-      //     if (gaun.length > 30)
-      //       errors.push("Village (गांव) cannot exceed 30 characters.");
-      //     if (modelNo.length > 20)
-      //       errors.push("Model number cannot exceed 20 characters.");
-
-      //     const errorMessageDiv = document.getElementById("error-message");
-
-      //     if (errors.length > 0) {
-      //       errorMessageDiv.innerHTML = errors.join("<br>");
-      //       return;
-      //     } else {
-      //       errorMessageDiv.innerHTML = "";
-      //     }
-
-      //     // Get current date, day, and time
-      //     const now = new Date();
-      //     const date = now.toLocaleDateString(); // e.g., MM/DD/YYYY
-      //     const day = now.toLocaleString("en-us", { weekday: "long" }); // e.g., "Monday"
-      //     const time = now.toLocaleTimeString(); // e.g., HH:MM:SS AM/PM
-
-      //     // Set hidden fields
-      //     document.getElementById("submission_date").value = date;
-      //     document.getElementById("submission_day").value = day;
-      //     document.getElementById("submission_time").value = time;
-      //     document.getElementById("to_name").value = to_name;
-
-      //     const templateParams = {
-      //       from_name: fromName,
-      //       message: message,
-      //       jila: jila,
-      //       gaun: gaun,
-      //       phone: phone,
-      //       model_no: modelNo,
-      //       date: date,
-      //       day: day,
-      //       time: time,
-      //     };
-
-      //     emailjs
-      //       .send("service_efubzlf", "template_oeva3cf", templateParams)
-      //       .then((response) => {
-      //         console.log("Email successfully sent!", response);
-      //         document.getElementById("contact-form").reset(); // Reset the form
-      //         $("#thankYouModal").modal("show"); // Show the modal
-      //       })
-      //       .catch((error) => {
-      //         console.error("Failed to send email. Error:", error);
-      //         alert("Failed to send email. Please try again.");
-      //       });
-      //   }
       function sendEmail() {
         const fromName = document.getElementById("from_name").value.trim();
         const message = document.getElementById("message").value.trim();
@@ -338,7 +191,6 @@
       }
     </script>
     <script>
-      // Function to toggle the popup
       function togglePopup() {
         const popup = document.getElementById("whatsappPopup");
         popup.style.display =
@@ -347,10 +199,10 @@
             : "none";
       }
 
-      // Function to send the message
       function sendMessage() {
-        const message = document.getElementById("whatsapp_message").value;
-        const phoneNumber = "9149048749"; // Replace with your WhatsApp number in international format
+        const message =
+          "नमस्कार!, मैं सवित्री ऑटोमोबाइल्स की वेबसाइट से जुड़ रहा हूँ, मुझे स्वराज ट्रैक्टर्स के बारे में जानकारी चाहिए।";
+        const phoneNumber = "9149048749";
 
         // WhatsApp API link with the message
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -712,6 +564,47 @@
           src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
           alt="WhatsApp"
         />
+      </div>
+
+      <!-- WhatsApp Popup -->
+      <div class="whatsapp-popup" id="whatsappPopup">
+        <div class="whatsapp-popup-header">
+          <div style="display: flex; align-items: center">
+            <img src="images/logo/logo.jpg" alt="Logo" />
+            <div>
+              <h4>SAVITRI AUTOMOBILES</h4>
+              <span>Typically replies within 1 hour</span>
+            </div>
+          </div>
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+        </div>
+        <div class="whatsapp-message">
+          <p class="mb-0">नमस्कार!</p>
+          <h6 class="mb-2">
+            सवित्री ऑटोमोबाइल्स, महाराजगंज में आपका स्वागत है!
+          </h6>
+          <p class="mb-0 lh-base">
+            हम आपको स्वराज ट्रैक्टर्स की विस्तृत जानकारी और सहायता प्रदान करने
+            के लिए तैयार हैं।
+          </p>
+
+          <p class="mb-0 mt-2 lh-base">
+            धन्यवाद,<br />
+            सवित्री ऑटोमोबाइल्स |
+          </p>
+        </div>
+        <div class="whatsapp-input">
+          <textarea
+            id="whatsapp_message"
+            rows="1"
+            placeholder="Type a message..."
+            value="नमस्कार!, मैं सवित्री ऑटोमोबाइल्स की वेबसाइट से जुड़ रहा हूँ, मुझे स्वराज ट्रैक्टर्स के बारे में जानकारी चाहिए।"
+            readonly
+          >
+नमस्कार!, मैं सवित्री ऑटोमोबाइल्स की वेबसाइट से जुड़ रहा हूँ, मुझे स्वराज ट्रैक्टर्स के बारे में जानकारी चाहिए।</textarea
+          >
+          <button onclick="sendMessage()">Send</button>
+        </div>
       </div>
 
       <!-- WhatsApp Popup -->

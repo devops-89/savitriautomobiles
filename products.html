@@ -64,7 +64,6 @@
     gtag("config", "G-8JE72BBRTQ");
   </script>
   <script>
-    // Function to toggle the popup
     function togglePopup() {
       const popup = document.getElementById("whatsappPopup");
       popup.style.display =
@@ -73,10 +72,10 @@
           : "none";
     }
 
-    // Function to send the message
     function sendMessage() {
-      const message = document.getElementById("message").value;
-      const phoneNumber = "9149048749"; // Replace with your WhatsApp number in international format
+      const message =
+        "नमस्कार!, मैं सवित्री ऑटोमोबाइल्स की वेबसाइट से जुड़ रहा हूँ, मुझे स्वराज ट्रैक्टर्स के बारे में जानकारी चाहिए।";
+      const phoneNumber = "9149048749";
 
       // WhatsApp API link with the message
       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -2303,49 +2302,7 @@
         </section>
       </div>
       <!-- content close -->
-      <div class="whatsapp-button" onclick="togglePopup()">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-          alt="WhatsApp"
-        />
-      </div>
 
-      <!-- WhatsApp Popup -->
-      <div class="whatsapp-popup" id="whatsappPopup">
-        <div class="whatsapp-popup-header">
-          <div style="display: flex; align-items: center">
-            <img src="images/logo/logo.jpg" alt="Logo" />
-            <div>
-              <h4>SAVITRI AUTOMOBILES</h4>
-              <span>Typically replies within 1 hour</span>
-            </div>
-          </div>
-          <div class="close-btn" onclick="togglePopup()">&times;</div>
-        </div>
-        <div class="whatsapp-message">
-          <p class="mb-0">नमस्कार!</p>
-          <h6 class="mb-2">
-            सवित्री ऑटोमोबाइल्स, महाराजगंज में आपका स्वागत है!
-          </h6>
-          <p class="mb-0 lh-base">
-            हम आपको स्वराज ट्रैक्टर्स की विस्तृत जानकारी और सहायता प्रदान करने
-            के लिए तैयार हैं।
-          </p>
-
-          <p class="mb-0 mt-2 lh-base">
-            धन्यवाद,<br />
-            सवित्री ऑटोमोबाइल्स |
-          </p>
-        </div>
-        <div class="whatsapp-input">
-          <textarea
-            id="message"
-            rows="1"
-            placeholder="Type a message..."
-          ></textarea>
-          <button onclick="sendMessage()">Send</button>
-        </div>
-      </div>
       <!-- footer begin -->
       <footer class="section-dark desktop_footer">
         <div class="container">
@@ -2555,6 +2512,53 @@
         </div>
       </footer>
       <!-- mobile Footer close -->
+      <div class="whatsapp-button" onclick="togglePopup()">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+        />
+      </div>
+
+      <!-- WhatsApp Popup -->
+      <div class="whatsapp-popup" id="whatsappPopup">
+        <div class="whatsapp-popup-header">
+          <div style="display: flex; align-items: center">
+            <img src="images/logo/logo.jpg" alt="Logo" />
+            <div>
+              <h4>SAVITRI AUTOMOBILES</h4>
+              <span>Typically replies within 1 hour</span>
+            </div>
+          </div>
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+        </div>
+        <div class="whatsapp-message">
+          <p class="mb-0">नमस्कार!</p>
+          <h6 class="mb-2">
+            सवित्री ऑटोमोबाइल्स, महाराजगंज में आपका स्वागत है!
+          </h6>
+          <p class="mb-0 lh-base">
+            हम आपको स्वराज ट्रैक्टर्स की विस्तृत जानकारी और सहायता प्रदान करने
+            के लिए तैयार हैं।
+          </p>
+
+          <p class="mb-0 mt-2 lh-base">
+            धन्यवाद,<br />
+            सवित्री ऑटोमोबाइल्स |
+          </p>
+        </div>
+        <div class="whatsapp-input">
+          <textarea
+            id="message"
+            rows="1"
+            placeholder="Type a message..."
+            value="नमस्कार!, मैं सवित्री ऑटोमोबाइल्स की वेबसाइट से जुड़ रहा हूँ, मुझे स्वराज ट्रैक्टर्स के बारे में जानकारी चाहिए।"
+            readonly
+          >
+नमस्कार!, मैं सवित्री ऑटोमोबाइल्स की वेबसाइट से जुड़ रहा हूँ, मुझे स्वराज ट्रैक्टर्स के बारे में जानकारी चाहिए।</textarea
+          >
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
     </div>
 
     <script>

@@ -53,7 +53,6 @@
       }
     </style>
     <script>
-      // Function to toggle the popup
       function togglePopup() {
         const popup = document.getElementById("whatsappPopup");
         popup.style.display =
@@ -62,10 +61,10 @@
             : "none";
       }
 
-      // Function to send the message
       function sendMessage() {
-        const message = document.getElementById("message").value;
-        const phoneNumber = "9149048749"; // Replace with your WhatsApp number in international format
+        const message =
+          "नमस्कार!, मैं सवित्री ऑटोमोबाइल्स की वेबसाइट से जुड़ रहा हूँ, मुझे स्वराज ट्रैक्टर्स के बारे में जानकारी चाहिए।";
+        const phoneNumber = "9149048749";
 
         // WhatsApp API link with the message
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -111,32 +110,40 @@
       </div>
       <div class="whatsapp-message">
         <p class="mb-0">नमस्कार!</p>
-          <h6 class="mb-2">
-            सवित्री ऑटोमोबाइल्स, महाराजगंज में आपका स्वागत है!
-          </h6>
-          <p class="mb-0 lh-base">
-            हम आपको स्वराज ट्रैक्टर्स की विस्तृत जानकारी और सहायता प्रदान करने
-            के लिए तैयार हैं।
-          </p>
+        <h6 class="mb-2">सवित्री ऑटोमोबाइल्स, महाराजगंज में आपका स्वागत है!</h6>
+        <p class="mb-0 lh-base">
+          हम आपको स्वराज ट्रैक्टर्स की विस्तृत जानकारी और सहायता प्रदान करने के
+          लिए तैयार हैं।
+        </p>
 
-          <p class="mb-0 mt-2 lh-base">
-            धन्यवाद,<br />
-            सवित्री ऑटोमोबाइल्स |
-          </p>
+        <p class="mb-0 mt-2 lh-base">
+          धन्यवाद,<br />
+          सवित्री ऑटोमोबाइल्स |
+        </p>
       </div>
       <div class="whatsapp-input">
         <textarea
           id="message"
           rows="1"
           placeholder="Type a message..."
-        ></textarea>
+          value="नमस्कार!, मैं सवित्री ऑटोमोबाइल्स की वेबसाइट से जुड़ रहा हूँ, मुझे स्वराज ट्रैक्टर्स के बारे में जानकारी चाहिए।"
+          readonly
+        >
+नमस्कार!, मैं सवित्री ऑटोमोबाइल्स की वेबसाइट से जुड़ रहा हूँ, मुझे स्वराज ट्रैक्टर्स के बारे में जानकारी चाहिए।</textarea
+        >
         <button onclick="sendMessage()">Send</button>
       </div>
     </div>
-     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLNG977Z"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KLNG977Z"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="wrapper">
       <div class="float-text show-on-scroll">
         <span><a href="#">Scroll to top</a></span>
