@@ -22075,12 +22075,17 @@ header .logo-mobile {
 /* Message container */
 .whatsapp-message {
   padding: 10px;
-  font-size: 14px;
+  font-size: 10px;
   background-color: #e1ffc7;
   border-radius: 5px;
-  margin: 10px;
+  /* margin: 10px; */
+  /* line-height:30px; */
 }
 
+
+.whatsapp-message h6 {
+  font-size: 10px;
+}
 /* Message input */
 .whatsapp-input {
   display: flex;
