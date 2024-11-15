@@ -4885,7 +4885,8 @@ h5.title {
 }
 
 .text-light .subtitle.s2 {
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: #1b9d47;
 }
 
 .subtitle.s2 span {
@@ -22082,7 +22083,6 @@ header .logo-mobile {
   /* line-height:30px; */
 }
 
-
 .whatsapp-message h6 {
   font-size: 10px;
 }
@@ -22111,4 +22111,15 @@ header .logo-mobile {
   padding: 8px 10px;
   cursor: pointer;
   margin-left: 5px;
+}
+
+
+.banner_tractorImage{
+  width:600px
+}
+
+@media screen and (max-width:600px){
+  .banner_tractorImage{
+    width:450px
+  }
 }
