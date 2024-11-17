@@ -22113,13 +22113,34 @@ header .logo-mobile {
   margin-left: 5px;
 }
 
-
-.banner_tractorImage{
-  width:600px
+.banner_tractorImage {
+  width: 600px;
 }
 
-@media screen and (max-width:600px){
-  .banner_tractorImage{
-    width:450px
+
+@media screen and (max-width: 600px) {
+  .banner_tractorImage {
+    width: 450px;
+  }
+  .tab-product {
+    display: none;
+  }
+  .mobile-product-carousel .scrollable-tabs .tabs-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+
+  .scrollable-tabs .tabs-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .scrollable-tabs .tabs-container::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 4px;
+  }
+
+  .scrollable-tabs .tabs-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
   }
 }
