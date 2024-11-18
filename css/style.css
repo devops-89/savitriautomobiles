@@ -22122,9 +22122,9 @@ header .logo-mobile {
   .banner_tractorImage {
     width: 450px;
   }
-  .tab-product {
+  /* .tab-product {
     display: none;
-  }
+  } */
   .mobile-product-carousel .scrollable-tabs .tabs-container {
     overflow-x: auto;
     white-space: nowrap;
