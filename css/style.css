@@ -1309,13 +1309,13 @@ header:not(.header-mobile) #mainmenu > li:hover ul.mega {
 #menu-btn {
   display: none;
   float: right;
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   padding: 4px;
   text-align: center;
   cursor: poInter;
   color: #fff;
-  margin-top: 0px;
+  margin-top: 5px;
   margin-left: 20px;
 }
 
