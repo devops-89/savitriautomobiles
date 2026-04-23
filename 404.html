@@ -25,25 +25,20 @@
     body {
        margin: 0;
       height: 100vh;
-      background: linear-gradient(135deg, #020617, #22c55e);
+      background-image: 
+    url("images/background/new-tractor.png");
+      background-size: cover;
+      background-position: center;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content:flex-start;
       font-family: Arial, sans-serif;
-      color: white;
-    }
-    .card-box {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      padding: 40px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-      max-width: 400px;
-      width: 90%;
+      color: rgb(8, 1, 1);
+       background-attachment: fixed;
+       background-repeat: no-repeat;
       
     }
-
+   
     .error-code {
       font-size: 100px;
       font-weight: bold;
@@ -54,16 +49,16 @@
     .icon {
       font-size: 40px;
       margin-bottom: 10px;
-      color: #f87171;
+      color: #ef0b0b;
     }
 
     .message {
       font-size: 16px;
-      color: #cbd5e1;
+      color: rgb(8, 1, 1);
     }
 
     .btn-home {
-      margin-top: 20px;
+      margin-top: 10%;
       padding: 10px 25px;
       border-radius: 6px;
       background: #22c55e;
@@ -83,12 +78,6 @@
   margin-top: 20px;
 }
 
-.social-icons a {
-  margin: 0 8px;
-  font-size: 18px;
-  color: #cbd5e1;
-  transition: 0.3s;
-}
 
 .social-icons a:hover {
   color: #22c55e;
@@ -96,11 +85,62 @@
 }
 
 .social-icons a {
-  background: rgba(255,255,255,0.05);
-  padding: 10px;
+  
+   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  margin: 0 8px;
+  font-size: 18px;
+
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+
   border-radius: 50%;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #22c55e;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+
+.card-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  padding: 30px;
+  border-radius: 12px;
+
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
+  max-width: 400px;
+  width: 90%;
+
+  margin: 20px; 
+
+}
+@media (min-width: 992px) {
+  body {
+    justify-content: flex-start; 
+  }
+
+  .card-box {
+    
+    margin-left: 80px;
+  }
 }
   </style>
+
+  
 </head>
 <body>
    <div class="card-box">
@@ -111,20 +151,19 @@
 
     <div class="error-code">404</div>
 
-    <h2>Page Not Found</h2>
+    <h2>Page Not Found <i class="fa-solid fa-exclamation"></i></h2>
 
     <p class="message">
       Oops! The page you're looking for doesn't exist or has been moved.
     </p>
 
-    <a href="index.html" class="btn-home">
+    <a href='/' class="btn-home">
       Go Back Home
     </a>
 
     <div class="social-icons">
         <a href="https://www.facebook.com/savitri.automobile/"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/savitriautomobiles/"><i class="fa-brands fa-instagram"></i
-></a>
+        <a href="https://www.instagram.com/savitriautomobiles/"><i class="fa-brands fa-instagram"></i></a>
 
     </div>
 
